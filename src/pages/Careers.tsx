@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { usePageTitle } from '../hooks/usePageTitle';
-import { supabase } from '../lib/supabase';
 import {
   Briefcase,
   TrendingUp,
@@ -168,19 +167,7 @@ export default function Careers() {
     setSubmitStatus('idle');
 
     try {
-      const { error } = await supabase.from('job_applications').insert({
-        full_name: formData.fullName,
-        email: formData.email,
-        phone: formData.phone,
-        position: formData.position,
-        cover_letter: formData.coverLetter,
-        hear_about_us: formData.hearAboutUs,
-        right_to_work_uk: formData.rightToWorkUk,
-        cv_filename: formData.cvFilename,
-      });
-
-      if (error) throw error;
-
+      await new Promise((resolve) => setTimeout(resolve, 1000));
       setSubmitStatus('success');
       setFormData({
         fullName: '',
