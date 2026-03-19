@@ -36,17 +36,17 @@ const logos: Logo[] = [
   {
     id: 'logo-6',
     description: 'Sarah Bonnell',
-    image: '/images/clients/sarah-bonnell.png',
+    image: '/images/clients/sarah-bonnell.jpg',
   },
   {
     id: 'logo-7',
     description: 'Southwark Council',
-    image: '/images/clients/southwark-council.png',
+    image: '/images/clients/southwark-council.jpg',
   },
   {
     id: 'logo-8',
     description: 'Havering',
-    image: '/images/clients/havering.png',
+    image: '/images/clients/havering.jpg',
   },
 ];
 
