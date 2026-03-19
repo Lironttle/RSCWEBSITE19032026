@@ -12,7 +12,7 @@ const certificates: Certificate[] = [
   { id: 'cert-2', description: 'Constructionline', image: '/images/certificates/constructionline.png' },
   { id: 'cert-3', description: 'Gas Safe', image: '/images/certificates/gas-safe.png' },
   { id: 'cert-4', description: 'NICEIC Approved Contractor', image: '/images/certificates/niceic.png' },
-  { id: 'cert-5', description: 'SafeContractor', image: '/images/certificates/safe-contractor.png' },
+  { id: 'cert-5', description: 'SafeContractor', image: '/images/certificates/safe-contractor.jpg' },
   { id: 'cert-6', description: 'Cyber Essentials', image: '/images/certificates/cyber-essentials.png' },
   { id: 'cert-7', description: 'ICO', image: '/images/certificates/ico.png' },
   { id: 'cert-8', description: 'SSIP', image: '/images/certificates/ssip.png' },
