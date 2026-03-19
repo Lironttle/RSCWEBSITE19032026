@@ -8,15 +8,11 @@ interface Certificate {
 }
 
 const certificates: Certificate[] = [
-  { id: 'cert-1', description: 'Certificate 1', image: '/CERTIFICATES/cert_1.png' },
-  { id: 'cert-2', description: 'Certificate 2', image: '/CERTIFICATES/cert_2.png' },
-  { id: 'cert-3', description: 'Certificate 3', image: '/CERTIFICATES/cert_3.png' },
-  { id: 'cert-4', description: 'Certificate 4', image: '/CERTIFICATES/cert_4.png' },
-  { id: 'cert-5', description: 'Certificate 5', image: '/CERTIFICATES/cert_5.png' },
-  { id: 'cert-6', description: 'Certificate 6', image: '/CERTIFICATES/cert_6.png' },
-  { id: 'cert-7', description: 'Certificate 7', image: '/CERTIFICATES/cert_7.png' },
-  { id: 'cert-8', description: 'Certificate 8', image: '/CERTIFICATES/cert_8.png' },
-  { id: 'cert-9', description: 'Certificate 9', image: '/CERTIFICATES/cert_9.png' },
+  { id: 'cert-1', description: 'Environment Agency', image: '/images/certificates/environment-agency.png' },
+  { id: 'cert-2', description: 'Constructionline', image: '/images/certificates/constructionline.png' },
+  { id: 'cert-3', description: 'Gas Safe', image: '/images/certificates/gas-safe.png' },
+  { id: 'cert-4', description: 'NICEIC Approved Contractor', image: '/images/certificates/niceic.png' },
+  { id: 'cert-5', description: 'SafeContractor', image: '/images/certificates/safe-contractor.png' },
 ];
 
 export default function CertificateLogos() {
