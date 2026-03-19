@@ -5,57 +5,48 @@ interface Logo {
   id: string;
   description: string;
   image: string;
-  className?: string;
 }
 
 const logos: Logo[] = [
   {
     id: 'logo-1',
     description: 'L&Q',
-    image: '/LOGOS/files_1966459-1768902909199-image.png',
-    className: 'h-24 w-auto',
+    image: '/images/clients/lq.png',
   },
   {
     id: 'logo-2',
     description: 'Peabody',
-    image: '/LOGOS/files_1966459-1768902912019-image.png',
-    className: 'h-20 w-auto',
+    image: '/images/clients/peabody.png',
   },
   {
     id: 'logo-3',
     description: 'Newham London',
-    image: '/LOGOS/files_1966459-1768902914831-image.png',
-    className: 'h-20 w-auto',
+    image: '/images/clients/newham-london.png',
   },
   {
     id: 'logo-4',
     description: 'Wates',
-    image: '/LOGOS/files_1966459-1768902919130-image.png',
-    className: 'h-20 w-auto',
+    image: '/images/clients/wates.png',
   },
   {
     id: 'logo-5',
     description: 'Interserve',
-    image: '/LOGOS/files_1966459-1768902922136-image.png',
-    className: 'h-20 w-auto',
+    image: '/images/clients/interserve.png',
   },
   {
     id: 'logo-6',
-    description: 'Client 6',
-    image: '/LOGOS/logo_6.jpg',
-    className: 'h-20 w-auto',
+    description: 'Sarah Bonnell',
+    image: '/images/clients/sarah-bonnell.png',
   },
   {
     id: 'logo-7',
-    description: 'Client 7',
-    image: '/LOGOS/logo_7.jpg',
-    className: 'h-20 w-auto',
+    description: 'Southwark Council',
+    image: '/images/clients/southwark-council.png',
   },
   {
     id: 'logo-8',
-    description: 'Client 8',
-    image: '/LOGOS/logo_8.jpg',
-    className: 'h-20 w-auto',
+    description: 'Havering',
+    image: '/images/clients/havering.png',
   },
 ];
 
@@ -84,7 +75,7 @@ export default function ClientLogos() {
                     <img
                       src={logo.image}
                       alt={logo.description}
-                      className={logo.className}
+                      className="h-20 w-auto max-w-[160px] object-contain"
                     />
                   </div>
                 </CarouselItem>
