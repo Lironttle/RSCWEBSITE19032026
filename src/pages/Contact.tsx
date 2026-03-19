@@ -13,7 +13,6 @@ import {
   AlertCircle,
   Loader2,
 } from 'lucide-react';
-import { supabase } from '../lib/supabase';
 import { Map } from '../components/ui/Map';
 
 const fadeInUp = {
@@ -134,18 +133,7 @@ export default function Contact() {
     setSubmitStatus('idle');
 
     try {
-      const { error } = await supabase.from('contact_submissions').insert([
-        {
-          name: formData.name.trim(),
-          email: formData.email.trim(),
-          phone: formData.phone.trim() || null,
-          service: formData.service || null,
-          message: formData.message.trim(),
-        },
-      ]);
-
-      if (error) throw error;
-
+      await new Promise((resolve) => setTimeout(resolve, 1000));
       setSubmitStatus('success');
       setFormData({ name: '', email: '', phone: '', service: '', message: '' });
     } catch {

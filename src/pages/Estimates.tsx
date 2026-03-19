@@ -15,7 +15,6 @@ import {
   Shield,
   Users,
 } from 'lucide-react';
-import { supabase } from '../lib/supabase';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -176,23 +175,7 @@ export default function Estimates() {
     setSubmitStatus('idle');
 
     try {
-      const { error } = await supabase.from('estimate_requests').insert([
-        {
-          name: formData.name.trim(),
-          email: formData.email.trim(),
-          phone: formData.phone.trim(),
-          property_type: formData.propertyType || null,
-          service_required: formData.service || null,
-          project_size: formData.projectSize || null,
-          timeline: formData.timeline || null,
-          budget_range: formData.budgetRange || null,
-          description: formData.description.trim() || null,
-          agree_to_contact: formData.agreeToContact,
-        },
-      ]);
-
-      if (error) throw error;
-
+      await new Promise((resolve) => setTimeout(resolve, 1000));
       setSubmitStatus('success');
       setFormData({
         name: '',
